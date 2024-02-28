@@ -11,15 +11,16 @@ $(function () {
       cannonImage = document.getElementById("cannon");
       $(document).on("keydown", handleKeyDown);
       $(document).on("keyup", handleKeyUp);
-      firstTimeSetup = false;
+      firstTimeSetup = true;
       //start game
       setInterval(main, 1000 / frameRate);
     }
+   createcollectable("halles")
     //create walls
-    createPlatform(-50, -50, canvas.width + 100, 50); //top
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
-    createPlatform(-50, -50, 50, canvas.height + 500); //bottom
-    createPlatform(canvas.width, -50, 50, canvas.height + 100);
+    createPlatform(100, 200, canvas.width + 50, 50); //top
+    createPlatform(20, canvas.height + 30, canvas.width + 100, 100); //right
+    createPlatform(50, 30, 250, canvas.height + 500); //bottom
+    createPlatform(canvas.width, 100, 200, canvas.height + 100);
 
     /**
      * Uncomment the loops below to add a "grid" to your platformer game's screen
@@ -44,7 +45,7 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
-
+    createPlatform(0, 300, 150, 10)
 
     
     // TODO 2
