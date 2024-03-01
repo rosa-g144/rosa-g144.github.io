@@ -15,7 +15,7 @@ $(function () {
       //start game
       setInterval(main, 1000 / frameRate);
     }
-   createcollectable("halles")
+   
     //create walls
     createPlatform(100, 200, canvas.width + 50, 50); //top
     createPlatform(20, canvas.height + 30, canvas.width + 100, 100); //right
