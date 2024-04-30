@@ -50,21 +50,7 @@ main {
 .content {
     flex: 1;
     padding: 15px;
-}
-/*portfolio styles*/
-#interest {
-    border: 4px seagreen;
-    padding: 10px;
-}
-h2, h3 {
-    margin: 0px;
-}
-img {
-    border: 5px solid;
-    border-radius: 40px;
-}
-
-         /* portfolio styles */
+}/* portfolio styles */
          .content h1 {
             color: black;
         }
